@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+        }
+        body
+        {
+            background-color: rgb(34, 34, 34);
+        }
+        .form
+        {
+            text-align: center;
+            margin-top: 300px;
+        }
+        .form form #email
+        {
+            font-size: 30px;
+            border-radius: 1px;
+            border: 2px solid red;
+            filter: drop-shadow(0 0 50px red);
+            text-align: center;
+        }
+        .form form #password
+        {
+            font-size: 30px;
+            border-radius: 1px;
+            border: 2px solid red;
+            filter: drop-shadow(0 0 50px red);
+            text-align: center;
+        }
+        .form form #submit
+        {
+            font-size: 30px;
+            border-radius: 1px;
+            border: 2px solid red;
+            filter: drop-shadow(0 0 50px red);
+        }
+        .form form #email:hover
+        {
+            animation-name: email;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .form form #password:hover
+        {
+            animation-name: password;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .form form #submit:hover
+        {
+            animation-name: submit;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        @keyframes email{
+            0%{border: 2px solid red; filter: drop-shadow(0 0 50px red);}
+            0%{border: 2px solid blue; filter: drop-shadow(0 0 50px blue);}
+            0%{border: 2px solid violet; filter: drop-shadow(0 0 50px violet);}
+        }
+        @keyframes password{
+            0%{border: 2px solid red; filter: drop-shadow(0 0 50px red);}
+            0%{border: 2px solid blue; filter: drop-shadow(0 0 50px blue);}
+            0%{border: 2px solid violet; filter: drop-shadow(0 0 50px violet);}
+        }
+        @keyframes submit{
+            0%{border: 2px solid red; filter: drop-shadow(0 0 50px red);}
+            0%{border: 2px solid blue; filter: drop-shadow(0 0 50px blue);}
+            0%{border: 2px solid violet; filter: drop-shadow(0 0 50px violet);}
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form method="post">
+            <input type="email" name="email" id="email" placeholder="Email"><br><br>
+            <input type="password" name="password" id="password" placeholder="Password"><br><br>
+            <input type="submit" value="register" id="submit">
+        </form>
+    </div>
+</body>
+</html>
